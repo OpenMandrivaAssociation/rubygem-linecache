@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{oname}
 Version:    0.43
-Release:    %mkrel 1
+Release:    %mkrel 2
 Summary:    Read file with caching
 Group:      Development/Ruby
 License:    GPLv2+
@@ -10,7 +10,9 @@ URL:        http://rubyforge.org/projects/rocky-hacks/linecache
 Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:   rubygems
+Requires:   ruby(abi) = 1.8
 BuildRequires: rubygems
+BuildRequires: ruby-devel
 Provides:   rubygem(%{oname}) = %{version}
 
 %description
@@ -20,7 +22,7 @@ example in a debugger where the same lines are shown many times.
 
 %prep
 %setup -q
-tar xf data.tar.gz
+tar xmf data.tar.gz
 
 %build
 %gem_build
