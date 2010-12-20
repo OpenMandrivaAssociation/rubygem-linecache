@@ -40,16 +40,14 @@ rm -rf %{buildroot}
 %defattr(-, root, root, -)
 %dir %{ruby_gemdir}/gems/%{oname}-%{version}/
 %{ruby_gemdir}/gems/%{oname}-%{version}/lib/
-%{ruby_gemdir}/gems/%{oname}-%{version}/test/
+#%{ruby_gemdir}/gems/%{oname}-%{version}/test/
 %doc %{ruby_gemdir}/doc/%{oname}-%{version}
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/AUTHORS
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/ChangeLog
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/COPYING
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/NEWS
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/Rakefile
+#%doc %{ruby_gemdir}/gems/%{oname}-%{version}/AUTHORS
+#%doc %{ruby_gemdir}/gems/%{oname}-%{version}/ChangeLog
+#%doc %{ruby_gemdir}/gems/%{oname}-%{version}/COPYING
+#%doc %{ruby_gemdir}/gems/%{oname}-%{version}/NEWS
+#%doc %{ruby_gemdir}/gems/%{oname}-%{version}/Rakefile
 %doc %{ruby_gemdir}/gems/%{oname}-%{version}/README
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/lib/linecache.rb
-%doc %{ruby_gemdir}/gems/%{oname}-%{version}/lib/tracelines.rb
+#%doc %{ruby_gemdir}/gems/%{oname}-%{version}/VERSION
 %{ruby_gemdir}/specifications/%{oname}-%{version}.gemspec
 %{ruby_sitearchdir}/trace_nums.so
