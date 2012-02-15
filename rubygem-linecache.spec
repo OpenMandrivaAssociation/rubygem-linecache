@@ -2,7 +2,7 @@
 
 Name:       rubygem-%{oname}
 Version:    0.43
-Release:    %mkrel 2
+Release:	3
 Summary:    Read file with caching
 Group:      Development/Ruby
 License:    GPLv2+
