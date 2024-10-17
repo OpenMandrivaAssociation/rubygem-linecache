@@ -6,7 +6,7 @@ Release:	3
 Summary:    Read file with caching
 Group:      Development/Ruby
 License:    GPLv2+
-URL:        http://rubyforge.org/projects/rocky-hacks/linecache
+URL:        https://rubyforge.org/projects/rocky-hacks/linecache
 Source0:    http://rubygems.org/gems/%{oname}-%{version}.gem
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:   rubygems
